@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nathaniel Koloc</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      .navbar {
+        height: 65px;
+        font-family: "National 2 narrow web", sans-serif;
+        font-stretch: condensed;
+        font-weight: 600;
+      }
+
+      .landscape {
+        width: 100%;
+        object-fit: cover;
+      }
+      #bio {
+        font-family: "National 2 narrow web", sans-serif;
+        font-weight: 600;
+        color: #b15533;
+        text-align: center;
+        margin-top: 40px;
+      }
+      p {
+        font-weight: "National 2 narrow web", sans-serif;
+        font-stretch: ultra-condensed;
+        font-weight: 500;
+      }
+      .nathaniel {
+        width: 225px;
+        border: 2px solid #b15533;
+      }
+
+      .Current-work {
+        background-color: #e2d4ba;
+        text-align: center;
+      }
+      .Current-work > * {
+        margin: 0 !important;
+      }
+      #pardon {
+        width: 80%;
+        max-width: 800px;
+        object-fit: cover;
+        padding-bottom: 70px;
+      }
+      .operating-experience {
+        background-color: rgba(234, 170, 0, 0.74);
+        text-align: center;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0 !important;
+      }
+      .my_card {
+        background-color: white;
+        width: 60%;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ox-para {
+        padding: 20px 0 50px;
+      }
+      .bnn {
+        text-align: center;
+      }
+      .flex_card {
+        text-align: left;
+        width: 200px;
+        justify-content: flex-start !important;
+      }
+      .circle {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(234, 170, 0, 0.74);
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+      }
+      .row {
+        margin-right: 0 !important;
+        justify-content: center;
+        gap: 50px;
+      }
+      #bnn-para {
+        text-align: left;
+      }
+      .cg {
+        background-color: #e2d4ba;
+        text-align: center;
+      }
+      #cg-para {
+        text-align: left;
+        width: 70%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .lis {
+        text-align: left;
+        width: 70%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-family: "National 2 narrow web", sans-serif;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+      }
+      .nintro {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-family: "Domaine display narrow web";
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: bold;
+        color:black;
+      }
+      .newslink {
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: "National 2 narrow web", sans-serif;
+        line-height: 42px;
+        color: #b15533;
+      }
+      .footer {
+        background-color: #7c8034;
+      }
+      .footer_row {
+        height: 100%;
+        align-items: center;
+        gap:0px;  
+      }
+      .sayhello {
+        color:white;
+        text-align: center;
+        font-family: 'Domaine display narrow web';
+        font-weight: bold;
+        font-size:30px;
+      }
+      .newsletter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .mail{
+        font-size:9px;
+        color:white;
+        text-align: center;
+        font-family: sans-serif;
+        text-decoration: none;
+      }
+      .mailer {
+        text-decoration: none;
+        display: inline-block;
+        justify-self: center;
+      }
+      .item3 {
+        height: 100px;
+        gap:20px;
+      }
+      .my_copyright {
+        text-align: center;
+        color:white;
+        font-size: 10px;
+        font-weight: bold;
+        font-stretch: condensed;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active mx-3" aria-current="page" href="#"
+                >Bio</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#">Work</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Background</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Guidance</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="./images/landscape.jpg" class="landscape" />
+
+    <section class="Bio">
+      <h6 class="pt-5" id="bio">Nathaniel's Bio</h6>
+      <h3
+        id="bio"
+        style="font-family: 'Domaine display narrow web'; font-size: xxx-large"
+        class="mx-sm-3"
+      >
+        About Nathaniel Koloc.
+      </h3>
+
+      <div class="container w-75 mt-4 mb-5">
+        <div class="row">
+          <div
+            class="col-xl-3 col-12 p-0 mb-4 mb-xl-0 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./images/nathaniel_koloc.jpeg"
+              alt="Nathaniel Koloc"
+              class="nathaniel"
+            />
+          </div>
+          <div class="col-xl p-0">
+            <p class="px-3 m-0" id="bio-para">
+              <a href="" style="color: black">Nathaniel Koloc</a> is an
+              entrepreneur, a people executive, a seasoned recruiter, and an
+              avid outdoorsman. He is the
+              <span style="font-style: italic">Managing Director</span> for
+              <a href="" style="color: black">Pardon</a>, a modern family
+              office.<br /><br />Before founding
+              <a href="" style="color: black">Formidable</a>, Nathaniel chaired
+              his
+              <a href="" style="color: black">wife's insurgent campaign</a> for
+              New York State Senate, was founding SVP People at Future
+              Laboratories, built & sold ReWork, a purpose-centric recruiting
+              firm, and served as Director of Talent Acquisition & Development
+              for Hillary Clinton’s 2016 campaign. The common thread through all
+              of his experiences has been combining insightful strategy,
+              high-output operating principles, and effective tools to create
+              powerful talent engines. Nathaniel’s roots are in ecology,
+              economics, and resilience.<br /><br />He holds a B.A. in Global
+              Human Impact Studies from the University of Vermont and an M.S. in
+              Strategic Leadership towards Sustainability from Blekinge Tekniska
+              Högskola in Sweden.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Current-work">
+      <h6
+        class="pt-5 pb-3"
+        style="
+          font-family: 'National 2 narrow web', sans-serif;
+          color: #b15533;
+          font-weight: 600;
+        "
+      >
+        CURRENT WORK
+      </h6>
+      <img src="./images/pardon.png" alt="Pardon" id="pardon" />
+    </section>
+
+    <section class="operating-experience pb-4">
+      <h6
+        class="pt-5 pb-3"
+        style="
+          font-family: 'National 2 narrow web', sans-serif;
+          color: #b15533;
+          font-weight: 600;
+        "
+      >
+        OPERATING EXPERIENCE
+      </h6>
+      <div class="my_card my-3">
+        <h4 class="py-4" style="font-family: 'DM Sans'">Formidable</h4>
+        <h6
+          class=""
+          style="
+            font-family: 'National 2 narrow web', sans-serif;
+            color: #b15533;
+            font-weight: 600;
+          "
+        >
+          Founder
+        </h6>
+        <p class="px-5 m-0 ox-para" style="text-align: left">
+          Formidable helps ambitious companies win by combining best-in-class
+          org design, talent methodology, and executive search. Formidable
+          searches draw on the experience of building & selling a
+          purpose-centric recruiting company, designing talent systems at the
+          scale of a presidential campaign, and extensive research into
+          top-performing creative companies, professional service firms, and
+          executives at high-growth startups. Formidable’s client portfolio
+          includes industry-leading firms in public relations & crisis
+          communications, real estate development & urban resilience,
+          philanthropy, cellular agriculture, venture incubation, fintech, and
+          political reform. Formidable was founded in January 2019 by Nathaniel.
+        </p>
+      </div>
+      <div class="my_card my-3">
+        <h4 class="py-4" style="font-family: 'DM Sans'">Formidable</h4>
+        <h6
+          class=""
+          style="
+            font-family: 'National 2 narrow web', sans-serif;
+            color: #b15533;
+            font-weight: 600;
+          "
+        >
+          Founder
+        </h6>
+        <p class="px-5 m-0 ox-para" style="text-align: left">
+          Formidable helps ambitious companies win by combining best-in-class
+          org design, talent methodology, and executive search. Formidable
+          searches draw on the experience of building & selling a
+          purpose-centric recruiting company, designing talent systems at the
+          scale of a presidential campaign, and extensive research into
+          top-performing creative companies, professional service firms, and
+          executives at high-growth startups. Formidable’s client portfolio
+          includes industry-leading firms in public relations & crisis
+          communications, real estate development & urban resilience,
+          philanthropy, cellular agriculture, venture incubation, fintech, and
+          political reform. Formidable was founded in January 2019 by Nathaniel.
+        </p>
+      </div>
+      <div class="my_card my-3">
+        <h4 class="py-4" style="font-family: 'DM Sans'">Formidable</h4>
+        <h6
+          class=""
+          style="
+            font-family: 'National 2 narrow web', sans-serif;
+            color: #b15533;
+            font-weight: 600;
+          "
+        >
+          Founder
+        </h6>
+        <p class="px-5 m-0 ox-para" style="text-align: left">
+          Formidable helps ambitious companies win by combining best-in-class
+          org design, talent methodology, and executive search. Formidable
+          searches draw on the experience of building & selling a
+          purpose-centric recruiting company, designing talent systems at the
+          scale of a presidential campaign, and extensive research into
+          top-performing creative companies, professional service firms, and
+          executives at high-growth startups. Formidable’s client portfolio
+          includes industry-leading firms in public relations & crisis
+          communications, real estate development & urban resilience,
+          philanthropy, cellular agriculture, venture incubation, fintech, and
+          political reform. Formidable was founded in January 2019 by Nathaniel.
+        </p>
+      </div>
+    </section>
+
+    <section class="bnn">
+      <h6
+        class="pt-5 pb-3"
+        style="
+          font-family: 'National 2 narrow web', sans-serif;
+          color: #b15533;
+          font-weight: 600;
+        "
+      >
+        BACKGROUND & NETWORKS
+      </h6>
+
+      <div class="row my-5">
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+        <div class="flex_card col-xl-1">
+          <div class="circle my-3"></div>
+          <h6
+            class=""
+            style="
+              font-family: 'National 2 narrow web', sans-serif;
+              color: #b15533;
+              font-weight: 600;
+            "
+          >
+            On Deck Fellowship
+          </h6>
+          <p class="py-3 m-0" id="bnn-para">
+            In 2019, I was one of 100+ founders who joined together over 8 weeks
+            to support each other in building new companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cg">
+      <h6
+        class="pt-5 pb-3"
+        style="
+          font-family: 'National 2 narrow web', sans-serif;
+          color: #b15533;
+          font-weight: 600;
+        "
+      >
+        CAREER GUIDANCE
+      </h6>
+      <p class="px-4 mt-2 pb-5 m-0" id="cg-para">
+        I very frequently get asked some version of the question "How can I
+        advance my career?" from folks who are graduating college, or realizing
+        they aren't happy in their first jobs. There's a lot written on this
+        topic - most of it not especially insightful, so here is my advice...<br /><br />
+        You should see your career as a grand experiment, where you're testing
+        combinations of which work situations, roles, companies/organizations
+        let you a) enjoy yourself, b) do things you are very good at, and c) get
+        paid well. You can read more specific guidance of mine in Harvard
+        Business Review from a few years ago (How to Build a Meaningful Career
+        and Build a Career Worth Having) - most of what's in these articles I
+        still agree with. What I would update has to do with pushing harder on
+        the experiments aspect: get really clear about what you think you know
+        about the work you want to do (and in what setting), and then try to do
+        that - but try to do it with as fast learning cycles as possible, i.e.
+        side projects, side hustles, volunteering, even talking to people in
+        another field - these are all underrated I think. They are much smarter
+        ways of testing what you may want to do than interviewing and taking a
+        new job in a new situation without having done preliminary "testing" and
+        seeing promising results from that. Run this cycle of learnings and
+        testing - don't forget to learn how to negotiate salary and charge what
+        you're worth! - and never stop.<br /><br />Here are a few pieces of
+        content that I think are smart and worth considering:
+      </p>
+      <ul class="lis pb-5" style="width: 60%">
+        <li>
+          This series of essays by Mark Andreessen (pages 2-5) are pretty
+          insightful, in my view.‍
+        </li>
+        <li>
+          This post byElad Gil, which has similar themes, is also smart and
+          worth reading.
+        </li>
+        <li>
+          This tweetstorm by Naval Ravikant is more philosophical, but full of
+          insight.
+        </li>
+      </ul>
+      <h6
+        class="pb-5 px-3"
+        style="
+          font-family: 'National 2 narrow web', sans-serif;
+          color: #b15533;
+          font-weight: 600;
+        "
+      >
+        For more musings related to entrepreneurship, politics, ecology and
+        more, follow along on Twitter @nathanielkoloc.
+      </h6>
+    </section>
+
+    <section class="newsletter">
+      <h4 class="nintro">For occasional updates from Nathaniel:</h4>
+      <a href="" class="mailer"><h6 class="newslink pb-4">Sign up for his newsletter here.</h6></a>
+    </section>
+
+    <section class="footer">
+      <div class="footer_row row mb-5 mb-xl-4 pt-4">
+        <div class="col-12 col-xl-2 item1 d-flex justify-content-center mt-4 mt-xl-0 mb-5 mb-xl-0">
+          <img class="mx-2" src="./images/twitter.svg" alt="linkedin">
+          <img class="mx-2" src="./images/linkedin.svg" alt="linkedin">
+        </div>
+        <div class="col-12 col-xl item2"></div>
+        <div class="col-12 col-xl-3 item3 d-flex flex-column justify-content-center">
+          <h4 class="sayhello">Say hello.</h4>
+          <a href="mailto:hello@formidable.services" class="mail">hello@nathanielkoloc.com</a>
+        </div>
+      </div>
+      <div class="my_copyright pb-3">© Nathaniel Koloc 2021 •  Designs by Sasha Prood</div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
